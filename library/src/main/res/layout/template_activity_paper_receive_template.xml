@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff4388d9"
+    android:orientation="vertical">
+
+    <com.hm.iou.uikit.HMTopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uikit_topbar_height"
+        app:bottomDividerIsShow="false"
+        app:titleBackground="#00000000"
+        app:titleColor="#ffffffff"
+        app:titleText="收条模板" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dip"
+        android:layout_marginTop="19dip"
+        android:layout_weight="1"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_template_iou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_marginBottom="14dip" />
+
+
+        <LinearLayout
+            android:layout_width="120dip"
+            android:layout_height="28dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/template_bg_paper_receive_indicator">
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator_template_iou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:ci_drawable="@drawable/uikit_indicator_radius_color_white"
+                app:ci_drawable_unselected="@drawable/template_indicator_paper_receive_unselected"
+                app:ci_height="8dp"
+                app:ci_width="8dp"
+                app:ci_animator="@animator/scale_with_alpha"
+                app:ci_animator_reverse="@animator/scale_with_alpha"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="75dip"
+        android:layout_marginRight="75dip"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/template_paper_receive_bottom_desc"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

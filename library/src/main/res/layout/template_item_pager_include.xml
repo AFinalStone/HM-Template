@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="19dip"
+        android:layout_marginRight="19dip"
+        android:background="@drawable/template_bg_template_page"
+        android:paddingBottom="20dip"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_template_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ff111111"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:layout_marginTop="40dip"
+            tools:text="收条收录神奇" />
+
+        <ImageView
+            android:id="@+id/iv_template_content"
+            android:layout_width="176dip"
+            android:layout_height="176dip"
+            android:layout_below="@id/tv_template_title"
+            android:layout_marginTop="20dip"
+            android:src="@mipmap/uikit_icon_header_man"
+            />
+
+        <TextView
+            android:id="@+id/tv_template_include_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff666666"
+            android:textSize="15dp"
+            tools:text="@string/template_paper_borrow_include_desc"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.3"
+            android:layout_marginTop="20dip"
+            />
+
+        <Button
+            android:id="@+id/btn_template_include"
+            style="@style/UikitButton"
+            android:layout_width="176dip"
+            android:textSize="@dimen/textFontSize_18"
+            android:layout_marginTop="20dip"
+            tools:text="收录借条"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

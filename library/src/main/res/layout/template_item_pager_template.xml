@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="19dip"
+        android:layout_marginRight="19dip"
+        android:background="@drawable/template_bg_template_page"
+        android:paddingBottom="20dip"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_template_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#ff111111"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:layout_marginTop="40dip"
+            tools:text="借 条" />
+
+        <ImageView
+            android:id="@+id/iv_template_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_below="@id/tv_template_title"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_template_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dip"
+        />
+
+    <ImageView
+        android:id="@+id/iv_template_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="32dip"
+        android:layout_marginBottom="10dip"
+        android:src="@mipmap/template_icon_zoom"
+        />
+
+</RelativeLayout>

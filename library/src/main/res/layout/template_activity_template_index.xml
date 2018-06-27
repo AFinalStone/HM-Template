@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/jietiao_bg_iou_type_select"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.hm.iou.uikit.HMTopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/uikit_topbar_height"
+        app:titleBackground="#00000000"
+        app:titleText="模板"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_template_borrow"
+        android:layout_width="310dp"
+        android:layout_height="133dp"
+        android:background="@drawable/jietiao_bg_type_select_round_corner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="30dp"
+            android:text="借条模板"
+            android:textColor="#ff111111"
+            android:textSize="@dimen/textFontSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/jietiao_template_desc"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/textFontSize_10"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_template_logo"
+            android:layout_marginRight="15dip"
+            />
+
+        <ImageView
+            android:id="@+id/iv_template_logo"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="23dp"
+            android:src="@mipmap/jietiao_ic_iou_template" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_template_receive"
+        android:layout_width="310dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/jietiao_bg_type_select_round_corner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="30dp"
+            android:text="收条模板"
+            android:textColor="#ff111111"
+            android:textSize="@dimen/textFontSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/jietiao_template_desc"
+            android:textColor="#ff666666"
+            android:textSize="@dimen/textFontSize_10"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_template_logo2"
+            android:layout_marginRight="15dip"
+            />
+
+        <ImageView
+            android:id="@+id/iv_template_logo2"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:src="@mipmap/jietiao_ic_receipt_template" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="55dp"
+        android:src="@mipmap/jietiao_ic_receipt_type_select_close" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
