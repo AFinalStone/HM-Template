@@ -1,6 +1,9 @@
 package com.hm.iou.template.business.comm;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -8,6 +11,7 @@ import com.hm.iou.base.BaseFragment;
 import com.hm.iou.base.mvp.MvpFragmentPresenter;
 import com.hm.iou.template.R;
 import com.hm.iou.template.R2;
+import com.hm.iou.template.business.TemplateDetailActivity;
 
 import butterknife.BindView;
 
@@ -50,11 +54,36 @@ public class TemplateContentFragment extends BaseFragment {
         if (args != null) {
             TemplateContentInfo info = args.getParcelable("data");
             mContentInfo = info;
-            if (mContentInfo != null) {
-                mTvTitle.setText(mContentInfo.getTitle());
-                mIvContent.setImageResource(mContentInfo.getContentResId());
-                mIvType.setImageResource(mContentInfo.getTopLabelResId());
+            if (mContentInfo == null) {
+                return;
             }
+            mTvTitle.setText(mContentInfo.getTitle());
+            mIvContent.setImageResource(mContentInfo.getContentResId());
+            mIvType.setImageResource(mContentInfo.getTopLabelResId());
+
+            mIvContent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    toDetailView();
+                }
+            });
         }
     }
+
+    private void toDetailView() {
+        ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(),
+                mIvContent, "过渡动画");
+        Intent intent = new Intent(getActivity(), TemplateDetailActivity.class);
+        intent.putExtra("title", mContentInfo.getTitle());
+        intent.putExtra("contentResId", mContentInfo.getContentResId());
+        startActivity(intent, transitionActivityOptions.toBundle());
+
+
+/*        Intent intent = new Intent(getActivity(), TemplateDetailActivity.class);
+        intent.putExtra("title", mContentInfo.getTitle());
+        intent.putExtra("contentResId", mContentInfo.getContentResId());
+        getActivity().startActivity(intent);
+        getActivity().overridePendingTransition(R.anim.template_zoom_enter, R.anim.template_zoom_exit);*/
+    }
+
 }

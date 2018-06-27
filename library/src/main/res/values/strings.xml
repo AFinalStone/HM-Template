@@ -9,6 +9,6 @@
     <string name="template_paper_borrow_include_btn">收录借条</string>
     <string name="template_paper_receive_include_btn">收录收条</string>
 
-    <string name="jietiao_template_desc">所有模板由专业\n律师提供</string>
+    <string name="template_template_desc">所有模板由专业\n律师提供</string>
 
 </resources>

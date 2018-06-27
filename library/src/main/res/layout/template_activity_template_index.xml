@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/jietiao_bg_iou_type_select"
+    android:background="@mipmap/template_bg_iou_type_select"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -25,7 +25,7 @@
         android:id="@+id/rl_template_borrow"
         android:layout_width="310dp"
         android:layout_height="133dp"
-        android:background="@drawable/jietiao_bg_type_select_round_corner">
+        android:background="@drawable/template_bg_type_select_round_corner">
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="36dp"
             android:layout_marginTop="56dp"
-            android:text="@string/jietiao_template_desc"
+            android:text="@string/template_template_desc"
             android:textColor="#ff666666"
             android:textSize="@dimen/textFontSize_10"
             android:layout_alignParentLeft="true"
@@ -57,7 +57,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="23dp"
-            android:src="@mipmap/jietiao_ic_iou_template" />
+            android:src="@mipmap/template_ic_iou_template" />
     </RelativeLayout>
 
 
@@ -66,7 +66,7 @@
         android:layout_width="310dp"
         android:layout_height="133dp"
         android:layout_marginTop="48dp"
-        android:background="@drawable/jietiao_bg_type_select_round_corner">
+        android:background="@drawable/template_bg_type_select_round_corner">
 
         <TextView
             android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="36dp"
             android:layout_marginTop="56dp"
-            android:text="@string/jietiao_template_desc"
+            android:text="@string/template_template_desc"
             android:textColor="#ff666666"
             android:textSize="@dimen/textFontSize_10"
             android:layout_alignParentLeft="true"
@@ -97,7 +97,7 @@
             android:layout_height="133dp"
             android:layout_alignParentRight="true"
             android:layout_marginRight="25dp"
-            android:src="@mipmap/jietiao_ic_receipt_template" />
+            android:src="@mipmap/template_ic_receipt_template" />
     </RelativeLayout>
 
 
@@ -106,7 +106,7 @@
         android:layout_width="58dp"
         android:layout_height="58dp"
         android:layout_marginTop="55dp"
-        android:src="@mipmap/jietiao_ic_receipt_type_select_close" />
+        android:src="@mipmap/template_ic_receipt_type_select_close" />
 
 
     <View
