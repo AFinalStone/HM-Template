@@ -20,15 +20,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="19dip"
         android:layout_marginTop="19dip"
-        android:layout_weight="1"
-        >
+        android:layout_weight="1">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_template_iou"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:overScrollMode="never"
-            android:layout_marginBottom="14dip" />
+            android:layout_marginBottom="14dip"
+            android:overScrollMode="never" />
 
 
         <LinearLayout
@@ -38,17 +37,14 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/template_bg_paper_receive_indicator">
 
-            <me.relex.circleindicator.CircleIndicator
+            <com.hm.iou.uikit.CircleIndicator
                 android:id="@+id/indicator_template_iou"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:ci_drawable="@drawable/uikit_indicator_radius_color_white"
+                app:ci_drawable="@drawable/uikit_circle_indicator_radius_color_white"
                 app:ci_drawable_unselected="@drawable/template_indicator_paper_receive_unselected"
                 app:ci_height="8dp"
-                app:ci_width="8dp"
-                app:ci_animator="@animator/scale_with_alpha"
-                app:ci_animator_reverse="@animator/scale_with_alpha"
-                />
+                app:ci_width="8dp" />
 
         </LinearLayout>
 

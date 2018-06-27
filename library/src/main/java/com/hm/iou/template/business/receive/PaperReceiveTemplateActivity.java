@@ -21,7 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import me.relex.circleindicator.CircleIndicator;
+
+import com.hm.iou.uikit.CircleIndicator;
 
 /**
  * Created by hjy on 2018/6/25.
