@@ -54,7 +54,8 @@
         <Button
             android:id="@+id/btn_template_include"
             style="@style/UikitButton"
-            android:layout_width="176dip"
+            android:layout_width="200dip"
+            android:layout_height="48dip"
             android:textSize="@dimen/textFontSize_18"
             android:layout_marginTop="20dip"
             tools:text="收录借条"
