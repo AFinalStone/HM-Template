@@ -5,7 +5,7 @@
     <string name="template_paper_borrow_include_desc">如果您已经手写完纸质借条，\n为你保留所有纸质借款记录，免费提\n供“查看”“提醒”服务</string>
     <string name="template_paper_receive_include_desc">如果您已经手写完纸质收条，\n为你保留所有纸质收条记录，免费提\n供“查看”服务</string>
     <string name="template_paper_borrow_include_title">借条收录神器</string>
-    <string name="template_paper_receive_include_title">收条收录神奇</string>
+    <string name="template_paper_receive_include_title">收条收录神器</string>
     <string name="template_paper_borrow_include_btn">收录借条</string>
     <string name="template_paper_receive_include_btn">收录收条</string>
 
