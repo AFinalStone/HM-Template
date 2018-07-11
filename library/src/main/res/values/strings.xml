@@ -2,8 +2,8 @@
 
     <string name="template_paper_borrow_bottom_desc">如果您习惯使用纸质借条\n我们为您提供相关的“模板”供您参考</string>
     <string name="template_paper_receive_bottom_desc">如果您需要使用纸质收条\n我们为您提供相关的“模板”供您参考</string>
-    <string name="template_paper_borrow_include_desc">如果您已经手写完纸质借条，\n为你保留所有纸质借款记录，免费提\n供“查看”“提醒”服务</string>
-    <string name="template_paper_receive_include_desc">如果您已经手写完纸质收条，\n为你保留所有纸质收条记录，免费提\n供“查看”服务</string>
+    <string name="template_paper_borrow_include_desc">您的“纸质借条”，记得\n点下面的入口备份存档。</string>
+    <string name="template_paper_receive_include_desc">您的“纸质收条”，记得\n点下面的入口备份存档。</string>
     <string name="template_paper_borrow_include_title">借条收录神器</string>
     <string name="template_paper_receive_include_title">收条收录神器</string>
     <string name="template_paper_borrow_include_btn">收录借条</string>
