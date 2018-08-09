@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.hm.iou.base.BaseActivity;
 import com.hm.iou.base.mvp.MvpActivityPresenter;
+import com.hm.iou.base.utils.TraceUtil;
 import com.hm.iou.router.Router;
 import com.hm.iou.template.R;
 import com.hm.iou.template.R2;
@@ -42,12 +43,15 @@ public class TemplateIndexActivity extends BaseActivity {
     @OnClick(value = {R2.id.iv_close, R2.id.rl_template_borrow, R2.id.rl_template_receive})
     void onClick(View v) {
         if (v.getId() == R.id.iv_close) {
+            TraceUtil.onEvent(this, "template_close_click");
             finish();
         } else if (v.getId() == R.id.rl_template_borrow) {
+            TraceUtil.onEvent(this, "templaet_borrow_click");
             Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/template/paper_borrow")
                     .withString("show_include", "true")
                     .navigation(this);
         } else if (v.getId() == R.id.rl_template_receive) {
+            TraceUtil.onEvent(this, "template_receive_click");
             Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/template/paper_receive")
                     .withString("show_include", "true")
                     .navigation(this);
