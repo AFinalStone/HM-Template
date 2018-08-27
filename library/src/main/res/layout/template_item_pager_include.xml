@@ -17,25 +17,12 @@
         android:gravity="center_horizontal"
         >
 
-
-        <TextView
-            android:id="@+id/tv_template_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#ff111111"
-            android:textSize="20sp"
-            android:typeface="monospace"
-            android:layout_marginTop="40dip"
-            tools:text="收条收录神奇" />
-
         <ImageView
             android:id="@+id/iv_template_content"
             android:layout_width="186dip"
             android:layout_height="176dip"
             android:layout_below="@id/tv_template_title"
-            android:layout_marginTop="20dip"
-            android:src="@mipmap/template_img_include"
+            android:layout_marginTop="40dip"
             />
 
         <TextView

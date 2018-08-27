@@ -3,6 +3,7 @@ package com.hm.iou.template.business.comm;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hm.iou.base.BaseFragment;
@@ -30,12 +31,12 @@ public class TemplateIncludeFragment extends BaseFragment {
         return fragment;
     }
 
-    @BindView(R2.id.tv_template_title)
-    TextView mTvTitle;
     @BindView(R2.id.tv_template_include_desc)
     TextView mTvDesc;
     @BindView(R2.id.btn_template_include)
     Button mBtnInclude;
+    @BindView(R2.id.iv_template_content)
+    ImageView mIvTemplateType;
 
     private int mType;
 
@@ -55,13 +56,13 @@ public class TemplateIncludeFragment extends BaseFragment {
         if (args != null) {
             mType = args.getInt("type");
             if (mType == TYPE_PAPER_BORROW) {
-                mTvTitle.setText(R.string.template_paper_borrow_include_title);
                 mTvDesc.setText(R.string.template_paper_borrow_include_desc);
                 mBtnInclude.setText(R.string.template_paper_borrow_include_btn);
+                mIvTemplateType.setImageResource(R.mipmap.template_img_include_borrow);
             } else {
-                mTvTitle.setText(R.string.template_paper_receive_include_title);
                 mTvDesc.setText(R.string.template_paper_receive_include_desc);
                 mBtnInclude.setText(R.string.template_paper_receive_include_btn);
+                mIvTemplateType.setImageResource(R.mipmap.template_img_include_receive);
             }
         }
 

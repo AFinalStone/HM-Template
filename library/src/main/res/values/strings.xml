@@ -1,13 +1,13 @@
 <resources>
 
-    <string name="template_paper_borrow_bottom_desc">如果您习惯使用纸质借条\n我们为您提供相关的“模板”供您参考</string>
-    <string name="template_paper_receive_bottom_desc">如果您需要使用纸质收条\n我们为您提供相关的“模板”供您参考</string>
-    <string name="template_paper_borrow_include_desc">您的“纸质借条”，记得\n点下面的入口备份存档。</string>
-    <string name="template_paper_receive_include_desc">您的“纸质收条”，记得\n点下面的入口备份存档。</string>
+    <string name="template_paper_borrow_bottom_desc">如果您习惯使用“纸质借条”，\n请参考专业律师提供的模板。</string>
+    <string name="template_paper_receive_bottom_desc">如果您习惯使用“纸质收条”，\n请参考专业律师提供的模板。</string>
+    <string name="template_paper_borrow_include_desc">“债务人”备份可防止遗忘或内容被添加；\n“债权人”备份借条是防止遗失或损坏。\n有备无患，可以避免一些不必要的纠纷。</string>
+    <string name="template_paper_receive_include_desc">备份收条的目的是为了证明自己曾经\n给过对方，通常一般人都不太重视，\n但是遇到纠纷时收条是最有力的证据。</string>
     <string name="template_paper_borrow_include_title">借条收录神器</string>
     <string name="template_paper_receive_include_title">收条收录神器</string>
-    <string name="template_paper_borrow_include_btn">收录借条</string>
-    <string name="template_paper_receive_include_btn">收录收条</string>
+    <string name="template_paper_borrow_include_btn">备份</string>
+    <string name="template_paper_receive_include_btn">备份</string>
 
     <string name="template_template_desc">所有模板由专业\n律师提供</string>
 
