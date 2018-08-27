@@ -40,9 +40,14 @@ public class TemplateIndexActivity extends BaseActivity {
         mTopBarView.hideBackIcon();
     }
 
-    @OnClick(value = {R2.id.iv_close, R2.id.rl_template_borrow, R2.id.rl_template_receive})
+    @OnClick(value = {R2.id.rl_template_fun, R2.id.iv_close, R2.id.rl_template_borrow, R2.id.rl_template_receive})
     void onClick(View v) {
-        if (v.getId() == R.id.iv_close) {
+        if (v.getId() == R.id.rl_template_fun) {
+            TraceUtil.onEvent(mContext, "create_fun_click");
+            Router.getInstance()
+                    .buildWithUrl("hmiou://m.54jietiao.com/iou_create/fun_borrow_prepare")
+                    .navigation(mContext);
+        } else if (v.getId() == R.id.iv_close) {
             TraceUtil.onEvent(this, "template_close_click");
             finish();
         } else if (v.getId() == R.id.rl_template_borrow) {
