@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="36dp"
             android:layout_marginTop="30dp"
-            android:text="娱乐借条"
+            android:text="娱乐模板"
             android:textColor="#ff111111"
             android:textSize="@dimen/textFontSize_16"
             android:textStyle="bold" />
