@@ -2,6 +2,7 @@ package com.hm.iou.template.business;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -49,5 +50,12 @@ public class TemplateDetailActivity extends BaseActivity {
         params.width = width;
         params.height = height;
         mIvContent.setLayoutParams(params);
+
+        findViewById(R.id.iv_close).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
