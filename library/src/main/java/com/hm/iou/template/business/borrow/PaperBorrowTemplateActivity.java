@@ -15,13 +15,13 @@ import com.hm.iou.template.business.comm.TemplateContentFragment;
 import com.hm.iou.template.business.comm.TemplateContentInfo;
 import com.hm.iou.template.business.comm.TemplateIncludeFragment;
 import com.hm.iou.template.business.comm.TemplateUtil;
+import com.hm.iou.uikit.CircleIndicator;
 import com.hm.iou.uikit.HMTopBarView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import com.hm.iou.uikit.CircleIndicator;
 
 /**
  * Created by hjy on 2018/6/25.
@@ -60,7 +60,6 @@ public class PaperBorrowTemplateActivity extends BaseActivity {
             mShowInclude = bundle.getString(EXTRA_KEY_SHOW_INCLUDE_PAGE);
         }
 
-        mTopbarView.setBackIcon(R.mipmap.uikit_ic_menu_back_white);
         mTopbarView.setRightIcon(R.mipmap.template_icon_calc);
         mTopbarView.setOnMenuClickListener(new HMTopBarView.OnTopBarMenuClickListener() {
             @Override

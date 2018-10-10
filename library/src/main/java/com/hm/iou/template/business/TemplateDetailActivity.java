@@ -3,7 +3,7 @@ package com.hm.iou.template.business;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.hm.iou.base.BaseActivity;
 import com.hm.iou.base.mvp.MvpActivityPresenter;
@@ -45,7 +45,7 @@ public class TemplateDetailActivity extends BaseActivity {
 
         int width = getResources().getDisplayMetrics().widthPixels - DensityUtil.dip2px(this, 20);
         int height = (int) (width * (726f / 602));
-        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mIvContent.getLayoutParams();
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) mIvContent.getLayoutParams();
         params.width = width;
         params.height = height;
         mIvContent.setLayoutParams(params);
