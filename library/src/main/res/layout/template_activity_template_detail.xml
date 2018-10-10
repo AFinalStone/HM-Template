@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/uikit_topbar_height"
         app:bottomDividerIsShow="false"
-        app:backIcon="@mipmap/template_icon_close"
+        app:backIconIsShow="false"
         tools:titleText="借条模板" />
 
     <ImageView
@@ -22,6 +22,17 @@
         android:layout_marginTop="15dip"
         android:scaleType="fitXY"
         android:layout_gravity="center_horizontal"
+        android:layout_below="@id/topbar"
         />
 
-</LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:src="@mipmap/uikit_icon_close_black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        />
+
+</RelativeLayout>
