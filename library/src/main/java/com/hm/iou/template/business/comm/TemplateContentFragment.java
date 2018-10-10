@@ -35,6 +35,8 @@ public class TemplateContentFragment extends BaseFragment {
     ImageView mIvContent;
     @BindView(R2.id.iv_template_type)
     ImageView mIvType;
+    @BindView(R2.id.iv_template_zoom)
+    ImageView mIvZoom;
 
     private TemplateContentInfo mContentInfo;
 
@@ -62,6 +64,13 @@ public class TemplateContentFragment extends BaseFragment {
             mIvType.setImageResource(mContentInfo.getTopLabelResId());
 
             mIvContent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    toDetailView();
+                }
+            });
+
+            mIvZoom.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     toDetailView();
