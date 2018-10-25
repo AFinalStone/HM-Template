@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.hm.iou.base.BaseBizAppLike;
 import com.hm.iou.router.Router;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Router.init(this);
+
+        BaseBizAppLike appLike = new BaseBizAppLike();
+        appLike.onCreate(this);
+        appLike.initServer("http://192.168.1.217", "http://192.168.1.217",
+                "http://192.168.1.217");
+
         findViewById(R.id.btn_test1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

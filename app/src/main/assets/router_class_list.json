@@ -213,6 +213,11 @@
       "url": "hmiou://m.54jietiao.com/webview/index?title=*&url=*&showtitle=*&showdivider=*&showtitlebar=*",
       "iclass": "",
       "aclass": "com.hm.iou.base.webview.BaseWebviewActivity"
+    },
+    {
+      "url": "hmiou://m.54jietiao.com/webview/fullscreen?title=*&url=*&showtitle=*&showdivider=*&showtitlebar=*",
+      "iclass": "",
+      "aclass": "com.hm.iou.base.webview.FullScreenWebViewActivity"
     }
   ],
   "calculator": [
