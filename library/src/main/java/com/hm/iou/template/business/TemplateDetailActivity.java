@@ -54,7 +54,7 @@ public class TemplateDetailActivity extends BaseActivity {
         findViewById(R.id.iv_close).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                onBackPressed();
             }
         });
     }

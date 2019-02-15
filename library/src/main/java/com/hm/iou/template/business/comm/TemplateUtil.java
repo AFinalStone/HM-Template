@@ -15,19 +15,19 @@ public class TemplateUtil {
         List<TemplateContentInfo> list = new ArrayList<>();
 
         TemplateContentInfo info = new TemplateContentInfo("纸质“借条”注意事项",
-                R.mipmap.template_paper_borrow_1, R.mipmap.template_icon_remind);
+                R.mipmap.template_paper_borrow_1, "提醒");
         list.add(info);
 
         info = new TemplateContentInfo("借 条",
-                R.mipmap.template_paper_borrow_2, R.mipmap.template_icon_money);
+                R.mipmap.template_paper_borrow_2, "资金");
         list.add(info);
 
         info = new TemplateContentInfo("借 条",
-                R.mipmap.template_paper_borrow_3, R.mipmap.template_icon_material);
+                R.mipmap.template_paper_borrow_3, "物品");
         list.add(info);
 
         info = new TemplateContentInfo("中文数字大写",
-                R.mipmap.template_paper_borrow_4, 0);
+                R.mipmap.template_paper_borrow_4, "");
         list.add(info);
 
         return list;
@@ -37,23 +37,23 @@ public class TemplateUtil {
         List<TemplateContentInfo> list = new ArrayList<>();
 
         TemplateContentInfo info = new TemplateContentInfo("纸质“收条”注意事项",
-                R.mipmap.template_paper_receive_1, R.mipmap.template_icon_remind);
+                R.mipmap.template_paper_receive_1, "提醒");
         list.add(info);
 
         info = new TemplateContentInfo("收 条",
-                R.mipmap.template_paper_receive_2, R.mipmap.template_icon_money);
+                R.mipmap.template_paper_receive_2, "资金");
         list.add(info);
 
         info = new TemplateContentInfo("收 条",
-                R.mipmap.template_paper_receive_3, R.mipmap.template_icon_material);
+                R.mipmap.template_paper_receive_3, "物品");
         list.add(info);
 
         info = new TemplateContentInfo("代 收 条",
-                R.mipmap.template_paper_receive_4, R.mipmap.template_icon_collect);
+                R.mipmap.template_paper_receive_4, "代收");
         list.add(info);
 
         info = new TemplateContentInfo("中文数字大写",
-                R.mipmap.template_paper_borrow_4, 0);
+                R.mipmap.template_paper_borrow_4, "");
         list.add(info);
 
         return list;

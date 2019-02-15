@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fffd9b1d"
+    android:background="#ffa9bec5"
     android:orientation="vertical">
 
     <com.hm.iou.uikit.HMTopBarView
         android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/uikit_topbar_height"
-        app:bottomDividerIsShow="false"
         app:backIcon="@mipmap/uikit_icon_close_white_01"
+        app:bottomDividerIsShow="false"
         app:titleBackground="#00000000"
         app:titleColor="#ffffffff"
         app:titleText="借条模板" />
@@ -19,36 +19,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dip"
-        android:layout_marginTop="19dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
         android:layout_weight="1">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_template_iou"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="14dip"
             android:overScrollMode="never" />
 
-
-        <LinearLayout
+        <com.hm.iou.uikit.CircleIndicator
+            android:id="@+id/indicator_template_iou"
             android:layout_width="120dip"
-            android:layout_height="28dip"
+            android:layout_height="14dip"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/template_bg_paper_borrow_indicator"
-            >
-
-            <com.hm.iou.uikit.CircleIndicator
-                android:id="@+id/indicator_template_iou"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:ci_drawable="@drawable/uikit_circle_indicator_radius_color_white"
-                app:ci_drawable_unselected="@drawable/template_indicator_paper_borrow_unselected"
-                app:ci_height="8dp"
-                app:ci_width="8dp" />
-
-        </LinearLayout>
+            app:ci_drawable="@drawable/template_indicator_selected"
+            app:ci_drawable_unselected="@drawable/template_indicator_unselected"
+            app:ci_height="5dp"
+            app:ci_width="5dp"
+            android:layout_marginBottom="10dip"
+            />
 
     </RelativeLayout>
 
@@ -56,25 +48,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingBottom="25dip"
         android:paddingLeft="20dip"
         android:paddingRight="20dip"
-        android:paddingBottom="25dip"
-        android:paddingTop="20dip"
-        >
+        android:paddingTop="20dip">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:lineSpacingMultiplier="1.2"
             android:text="@string/template_paper_borrow_bottom_desc"
-            android:textColor="#ffffffff"
+            android:textColor="#ffd8e9ef"
             android:textSize="12sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/template_logo"
             android:layout_alignParentRight="true"
-            />
+            android:src="@mipmap/template_logo_borrow" />
 
     </RelativeLayout>
 

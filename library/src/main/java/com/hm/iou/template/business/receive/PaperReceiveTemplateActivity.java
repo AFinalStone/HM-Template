@@ -93,7 +93,7 @@ public class PaperReceiveTemplateActivity extends BaseActivity {
             super(fm);
             List<TemplateContentInfo> contentList = TemplateUtil.getPaperReceiveTemplateList();
             for (TemplateContentInfo info : contentList) {
-                list.add(TemplateContentFragment.newInstance(info));
+                list.add(TemplateContentFragment.newInstance(info, 0xff97999c, 0xffd5dae3));
             }
             if ("true".equals(mShowInclude)) {
                 list.add(TemplateIncludeFragment.newInstance(TemplateIncludeFragment.TYPE_PAPER_RECEIVE));

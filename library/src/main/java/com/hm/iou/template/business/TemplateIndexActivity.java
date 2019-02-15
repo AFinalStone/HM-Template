@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.hm.iou.base.BaseActivity;
-import com.hm.iou.base.BaseBizAppLike;
 import com.hm.iou.base.mvp.MvpActivityPresenter;
 import com.hm.iou.base.utils.TraceUtil;
 import com.hm.iou.router.Router;
@@ -41,23 +40,9 @@ public class TemplateIndexActivity extends BaseActivity {
         mTopBarView.hideBackIcon();
     }
 
-    @OnClick(value = {R2.id.rl_template_fun, R2.id.iv_close, R2.id.rl_template_borrow, R2.id.rl_template_receive})
+    @OnClick(value = {R2.id.rl_template_borrow, R2.id.rl_template_receive})
     void onClick(View v) {
-        if (v.getId() == R.id.rl_template_fun) {
-            TraceUtil.onEvent(mContext, "create_fun_click");
-/*            Router.getInstance()
-                    .buildWithUrl("hmiou://m.54jietiao.com/iou_create/fun_borrow_prepare")
-                    .navigation(mContext);*/
-
-            //跳转到娱乐P图页面
-            Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/webview/fullscreen")
-                    .withString("url", BaseBizAppLike.getInstance().getH5Server() + "/apph5/appPage/funimg-ps.html")
-                    .withString("showtitlebar", "false")
-                    .navigation(this);
-        } else if (v.getId() == R.id.iv_close) {
-            TraceUtil.onEvent(this, "template_close_click");
-            finish();
-        } else if (v.getId() == R.id.rl_template_borrow) {
+        if (v.getId() == R.id.rl_template_borrow) {
             TraceUtil.onEvent(this, "templaet_borrow_click");
             Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/template/paper_borrow")
                     .withString("show_include", "true")

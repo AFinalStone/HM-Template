@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/template_bg_iou_type_select"
+    android:background="@color/uikit_background"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -12,155 +12,78 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/uikit_topbar_height"
         app:titleBackground="#00000000"
-        app:titleText="模板"
-        />
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        />
-
-    <RelativeLayout
-        android:id="@+id/rl_template_fun"
-        android:layout_width="310dp"
-        android:layout_height="133dp"
-        android:background="@drawable/template_bg_type_select_round_corner">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="30dp"
-            android:text="娱乐模板"
-            android:textColor="#ff111111"
-            android:textSize="@dimen/textFontSize_16"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="56dp"
-            android:text="@string/template_fun_desc"
-            android:textColor="#ff666666"
-            android:textSize="@dimen/textFontSize_10" />
-
-        <ImageView
-            android:layout_width="133dp"
-            android:layout_height="133dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="23dp"
-            android:src="@mipmap/template_icon_type_select_fun" />
-    </RelativeLayout>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        />
+        app:titleText="参考合同" />
 
     <RelativeLayout
         android:id="@+id/rl_template_borrow"
-        android:layout_width="310dp"
-        android:layout_height="133dp"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="25dip"
         android:background="@drawable/template_bg_type_select_round_corner">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tv_template_borrow_title"
+            style="@style/UikitTextView.Auxiliary.Large"
             android:layout_marginLeft="36dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:text="借条模板"
-            android:textColor="#ff111111"
-            android:textSize="@dimen/textFontSize_16"
+            android:textColor="@color/uikit_text_sub_content"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="56dp"
-            android:text="@string/template_template_desc"
-            android:textColor="#ff666666"
-            android:textSize="@dimen/textFontSize_10"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/iv_template_logo"
+            style="@style/UikitTextView.Auxiliary.Small"
             android:layout_marginRight="15dip"
+            android:layout_marginTop="8dip"
+            android:layout_below="@id/tv_template_borrow_title"
+            android:layout_alignLeft="@id/tv_template_borrow_title"
+            android:text="@string/template_template_desc"
             />
 
         <ImageView
             android:id="@+id/iv_template_logo"
-            android:layout_width="133dp"
-            android:layout_height="133dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="23dp"
-            android:src="@mipmap/template_ic_iou_template" />
+            android:layout_width="137dp"
+            android:layout_height="118dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/template_img_borrow_template" />
     </RelativeLayout>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        />
 
     <RelativeLayout
         android:id="@+id/rl_template_receive"
-        android:layout_width="310dp"
-        android:layout_height="133dp"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:layout_marginTop="25dip"
         android:background="@drawable/template_bg_type_select_round_corner">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/tv_template_receive_title"
+            style="@style/UikitTextView.Auxiliary.Large"
             android:layout_marginLeft="36dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:text="收条模板"
-            android:textColor="#ff111111"
-            android:textSize="@dimen/textFontSize_16"
+            android:textColor="@color/uikit_text_sub_content"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginTop="56dp"
-            android:text="@string/template_template_desc"
-            android:textColor="#ff666666"
-            android:textSize="@dimen/textFontSize_10"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/iv_template_logo2"
+            style="@style/UikitTextView.Auxiliary.Small"
             android:layout_marginRight="15dip"
-            />
+            android:layout_marginTop="8dip"
+            android:layout_below="@id/tv_template_receive_title"
+            android:layout_alignLeft="@id/tv_template_receive_title"
+            android:text="@string/template_template_desc" />
 
         <ImageView
-            android:id="@+id/iv_template_logo2"
-            android:layout_width="133dp"
-            android:layout_height="133dp"
+            android:layout_width="137dp"
+            android:layout_height="118dp"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="25dp"
-            android:src="@mipmap/template_ic_receipt_template" />
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/template_img_receipt_template" />
     </RelativeLayout>
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        />
-
-    <ImageView
-        android:id="@+id/iv_close"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:src="@mipmap/template_ic_receipt_type_select_close" />
-
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0px"
-        android:layout_weight="1"
-        />
 
 </LinearLayout>

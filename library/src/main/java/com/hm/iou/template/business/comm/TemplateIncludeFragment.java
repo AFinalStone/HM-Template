@@ -58,11 +58,11 @@ public class TemplateIncludeFragment extends BaseFragment {
             if (mType == TYPE_PAPER_BORROW) {
                 mTvDesc.setText(R.string.template_paper_borrow_include_desc);
                 mBtnInclude.setText(R.string.template_paper_borrow_include_btn);
-                mIvTemplateType.setImageResource(R.mipmap.template_img_include_borrow);
+                mIvTemplateType.setImageResource(R.mipmap.template_img_borrow_template);
             } else {
                 mTvDesc.setText(R.string.template_paper_receive_include_desc);
                 mBtnInclude.setText(R.string.template_paper_receive_include_btn);
-                mIvTemplateType.setImageResource(R.mipmap.template_img_include_receive);
+                mIvTemplateType.setImageResource(R.mipmap.template_img_receipt_template);
             }
         }
 

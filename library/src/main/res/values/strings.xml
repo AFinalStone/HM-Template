@@ -9,7 +9,6 @@
     <string name="template_paper_borrow_include_btn">备份</string>
     <string name="template_paper_receive_include_btn">备份</string>
 
-    <string name="template_fun_desc">无须实名，娱乐为主\n可叠加提醒</string>
-    <string name="template_template_desc">所有模板由专业\n律师提供</string>
+    <string name="template_template_desc">所有模板由专业律师\n提供</string>
 
 </resources>

@@ -93,7 +93,7 @@ public class PaperBorrowTemplateActivity extends BaseActivity {
             super(fm);
             List<TemplateContentInfo> contentList = TemplateUtil.getPaperBorrowTemplateList();
             for (TemplateContentInfo info : contentList) {
-                list.add(TemplateContentFragment.newInstance(info));
+                list.add(TemplateContentFragment.newInstance(info, 0xffa9bec5, 0xffdce7eb));
             }
             if ("true".equals(mShowInclude)) {
                 list.add(TemplateIncludeFragment.newInstance(TemplateIncludeFragment.TYPE_PAPER_BORROW));

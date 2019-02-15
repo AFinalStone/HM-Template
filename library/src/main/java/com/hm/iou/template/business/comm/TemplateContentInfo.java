@@ -11,12 +11,12 @@ public class TemplateContentInfo implements Parcelable {
 
     private String title;       //标题
     private int contentResId;   //内容图片资源id
-    private int topLabelResId;
+    private String typeLabel;
 
-    public TemplateContentInfo(String title, int contentResId, int topLabelResId) {
+    public TemplateContentInfo(String title, int contentResId, String typeLabel) {
         this.title = title;
         this.contentResId = contentResId;
-        this.topLabelResId = topLabelResId;
+        this.typeLabel = typeLabel;
     }
 
     public String getTitle() {
@@ -35,13 +35,14 @@ public class TemplateContentInfo implements Parcelable {
         this.contentResId = contentResId;
     }
 
-    public int getTopLabelResId() {
-        return topLabelResId;
+    public String getTypeLabel() {
+        return typeLabel;
     }
 
-    public void setTopLabelResId(int topLabelResId) {
-        this.topLabelResId = topLabelResId;
+    public void setTypeLabel(String typeLabel) {
+        this.typeLabel = typeLabel;
     }
+
 
     @Override
     public int describeContents() {
@@ -52,16 +53,16 @@ public class TemplateContentInfo implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.title);
         dest.writeInt(this.contentResId);
-        dest.writeInt(this.topLabelResId);
+        dest.writeString(this.typeLabel);
     }
 
     protected TemplateContentInfo(Parcel in) {
         this.title = in.readString();
         this.contentResId = in.readInt();
-        this.topLabelResId = in.readInt();
+        this.typeLabel = in.readString();
     }
 
-    public static final Parcelable.Creator<TemplateContentInfo> CREATOR = new Parcelable.Creator<TemplateContentInfo>() {
+    public static final Creator<TemplateContentInfo> CREATOR = new Creator<TemplateContentInfo>() {
         @Override
         public TemplateContentInfo createFromParcel(Parcel source) {
             return new TemplateContentInfo(source);

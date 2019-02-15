@@ -3,6 +3,7 @@ package com.hm.iou.template.business.comm;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,10 +22,12 @@ import butterknife.BindView;
 
 public class TemplateContentFragment extends BaseFragment {
 
-    public static TemplateContentFragment newInstance(TemplateContentInfo info) {
+    public static TemplateContentFragment newInstance(TemplateContentInfo info, int labelTextColor, int labelBgColor) {
         TemplateContentFragment fragment = new TemplateContentFragment();
         Bundle args = new Bundle();
         args.putParcelable("data", info);
+        args.putInt("labelTextColor", labelTextColor);
+        args.putInt("labelBgColor", labelBgColor);
         fragment.setArguments(args);
         return fragment;
     }
@@ -33,12 +36,14 @@ public class TemplateContentFragment extends BaseFragment {
     TextView mTvTitle;
     @BindView(R2.id.iv_template_content)
     ImageView mIvContent;
-    @BindView(R2.id.iv_template_type)
-    ImageView mIvType;
+    @BindView(R2.id.tv_template_type)
+    TextView mTvType;
     @BindView(R2.id.iv_template_zoom)
     ImageView mIvZoom;
 
     private TemplateContentInfo mContentInfo;
+    private int mLabelTextColor;
+    private int mLabelBgColor;
 
     @Override
     protected int getLayoutId() {
@@ -56,12 +61,21 @@ public class TemplateContentFragment extends BaseFragment {
         if (args != null) {
             TemplateContentInfo info = args.getParcelable("data");
             mContentInfo = info;
+            mLabelTextColor = args.getInt("labelTextColor");
+            mLabelBgColor = args.getInt("labelBgColor");
             if (mContentInfo == null) {
                 return;
             }
             mTvTitle.setText(mContentInfo.getTitle());
             mIvContent.setImageResource(mContentInfo.getContentResId());
-            mIvType.setImageResource(mContentInfo.getTopLabelResId());
+
+            if (TextUtils.isEmpty(mContentInfo.getTypeLabel())) {
+                mTvType.setVisibility(View.INVISIBLE);
+            } else {
+                mTvType.setText(mContentInfo.getTypeLabel());
+                mTvType.setBackgroundColor(mLabelBgColor);
+                mTvType.setTextColor(mLabelTextColor);
+            }
 
             mIvContent.setOnClickListener(new View.OnClickListener() {
                 @Override
