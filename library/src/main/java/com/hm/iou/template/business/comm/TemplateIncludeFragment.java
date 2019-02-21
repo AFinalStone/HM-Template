@@ -70,11 +70,13 @@ public class TemplateIncludeFragment extends BaseFragment {
             @Override
             public void onClick(View v) {
                 if (mType == TYPE_PAPER_BORROW) {
-                    Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_borrow_prepare")
-                            .navigation(getActivity());
+                    Router.getInstance()
+                            .buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_borrow_create_or_modic_receipt")
+                            .navigation(getContext());
                 } else {
-                    Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_receive_prepare")
-                            .navigation(getActivity());
+                    Router.getInstance()
+                            .buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_receive_create_or_modic_receipt")
+                            .navigation(getContext());
                 }
             }
         });
