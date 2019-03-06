@@ -34,8 +34,6 @@ public class PaperBorrowTemplateActivity extends BaseActivity {
      */
     public static final String EXTRA_KEY_SHOW_INCLUDE_PAGE = "show_include";
 
-    @BindView(R2.id.topbar)
-    HMTopBarView mTopbarView;
     @BindView(R2.id.indicator_template_iou)
     CircleIndicator mCircleIndicator;
     @BindView(R2.id.vp_template_iou)
@@ -59,20 +57,6 @@ public class PaperBorrowTemplateActivity extends BaseActivity {
         if (bundle != null) {
             mShowInclude = bundle.getString(EXTRA_KEY_SHOW_INCLUDE_PAGE);
         }
-
-        mTopbarView.setRightIcon(R.mipmap.template_icon_calc);
-        mTopbarView.setOnMenuClickListener(new HMTopBarView.OnTopBarMenuClickListener() {
-            @Override
-            public void onClickTextMenu() {
-
-            }
-
-            @Override
-            public void onClickImageMenu() {
-                Router.getInstance().buildWithUrl("hmiou://m.54jietiao.com/calculator/index")
-                        .navigation(PaperBorrowTemplateActivity.this);
-            }
-        });
 
         PaperBorrowPagerAdapter adapter = new PaperBorrowPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(adapter);

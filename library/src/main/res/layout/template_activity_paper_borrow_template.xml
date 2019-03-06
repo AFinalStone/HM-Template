@@ -7,13 +7,11 @@
     android:orientation="vertical">
 
     <com.hm.iou.uikit.HMTopBarView
-        android:id="@+id/topbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/uikit_topbar_height"
         app:backIcon="@mipmap/uikit_icon_close_white_01"
         app:bottomDividerIsShow="false"
-        app:titleBackground="#00000000"
-        app:titleColor="#ffffffff"
+        app:titleBackground="@color/transparent"
         app:titleText="借条模板" />
 
     <RelativeLayout
