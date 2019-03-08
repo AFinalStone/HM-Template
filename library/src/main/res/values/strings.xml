@@ -1,7 +1,7 @@
 <resources>
 
-    <string name="template_paper_borrow_bottom_desc">如果您主要使用“纸质借条”，\n请参考专业律师提供的模板。</string>
-    <string name="template_paper_receive_bottom_desc">如果您主要使用“纸质收条”，\n请参考专业律师提供的模板。</string>
+    <string name="template_paper_borrow_bottom_desc">如果您需要使用“纸质借条”，\n请参考专业律师提供的模板。</string>
+    <string name="template_paper_receive_bottom_desc">如果您需要使用“纸质收条”，\n请参考专业律师提供的模板。</string>
     <string name="template_paper_borrow_include_desc">“债务人”备份可防止遗忘或内容被添加；\n“债权人”备份借条是防止遗失或损坏。\n有备无患，可以避免一些不必要的纠纷。</string>
     <string name="template_paper_receive_include_desc">备份收条的目的是为了证明自己曾经\n给过对方，通常一般人都不太重视，\n但是遇到纠纷时收条是最有力的证据。</string>
     <string name="template_paper_borrow_include_title">借条收录神器</string>
