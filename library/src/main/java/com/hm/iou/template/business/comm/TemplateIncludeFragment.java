@@ -69,15 +69,19 @@ public class TemplateIncludeFragment extends BaseFragment {
         mBtnInclude.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mType == TYPE_PAPER_BORROW) {
-                    Router.getInstance()
-                            .buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_borrow_create_or_modic_receipt")
-                            .navigation(getContext());
-                } else {
-                    Router.getInstance()
-                            .buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_receive_create_or_modic_receipt")
-                            .navigation(getContext());
-                }
+                Router.getInstance()
+                        .buildWithUrl("hmi ou://m.54jietiao.com/iou_create/select_type?select_type=backup_receipt")
+                        .navigation();
+//                if (mType == TYPE_PAPER_BORROW) {
+//                    Router.getInstance()
+//                            .buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_borrow_create_or_modic_receipt")
+//                            .navigation(getContext());
+
+//                } else {
+//                    Router.getInstance()
+//                            .buildWithUrl("hmiou://m.54jietiao.com/iou_create/paper_receive_create_or_modic_receipt")
+//                            .navigation(getContext());
+//                }
             }
         });
     }
