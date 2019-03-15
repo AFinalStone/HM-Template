@@ -12,21 +12,21 @@
         android:id="@+id/btn_test1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="借条模板"
+        android:text="借条模版"
         />
 
     <Button
         android:id="@+id/btn_test2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="收条模板"
+        android:text="收条模版"
         />
 
     <Button
         android:id="@+id/btn_test3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="模板首页"
+        android:text="模版首页"
         />
 
 

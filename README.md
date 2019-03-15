@@ -1,10 +1,10 @@
 #### HM-Pay
 
-集成纸质借条模板和纸质收条模板
+集成纸质借条模版和纸质收条模版
 
 #### 功能介绍
-- 纸质借条模板
-- 纸质收条模板
+- 纸质借条模版
+- 纸质收条模版
 
 
 #### 安装
@@ -39,9 +39,9 @@ allprojects {
 
 | 页面 | 路由url | 备注 |
 | ------ | ------ | ------ |
-| 模板类型选择页面 | ```hmiou://m.54jietiao.com/template/select_type```|  |
-| 纸质借条模板页面 | ```hmiou://m.54jietiao.com/template/paper_borrow?show_include=*``` | show_include为"true"，则显示收录页，其他情况都不显示 |
-| 纸质收条模板页面 | ```hmiou://m.54jietiao.com/template/paper_receive?show_include=*``` | show_include为"true"，则显示收录页，其他情况都不显示 |
+| 模版类型选择页面 | ```hmiou://m.54jietiao.com/template/select_type```|  |
+| 纸质借条模版页面 | ```hmiou://m.54jietiao.com/template/paper_borrow?show_include=*``` | show_include为"true"，则显示收录页，其他情况都不显示 |
+| 纸质收条模版页面 | ```hmiou://m.54jietiao.com/template/paper_receive?show_include=*``` | show_include为"true"，则显示收录页，其他情况都不显示 |
 
 路由文件
 

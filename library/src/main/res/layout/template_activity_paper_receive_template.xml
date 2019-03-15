@@ -12,7 +12,7 @@
         app:backIcon="@mipmap/uikit_icon_close_white_01"
         app:bottomDividerIsShow="false"
         app:titleBackground="@color/transparent"
-        app:titleText="收条模板" />
+        app:titleText="收条模版" />
 
     <RelativeLayout
         android:layout_width="match_parent"
