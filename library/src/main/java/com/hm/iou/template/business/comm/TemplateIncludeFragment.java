@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.hm.iou.base.BaseFragment;
 import com.hm.iou.base.mvp.MvpFragmentPresenter;
-import com.hm.iou.router.Router;
+import com.hm.iou.base.utils.RouterUtil;
 import com.hm.iou.template.R;
 import com.hm.iou.template.R2;
 
@@ -69,9 +69,11 @@ public class TemplateIncludeFragment extends BaseFragment {
         mBtnInclude.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Router.getInstance()
-                        .buildWithUrl("hmi ou://m.54jietiao.com/iou_create/select_type?select_type=backup_receipt")
-                        .navigation();
+                if (mType == TYPE_PAPER_BORROW) {
+                    RouterUtil.clickMenuLink(getActivity(), "hmiou://m.54jietiao.com/iou_create/paper_borrow_create_or_modic_receipt");
+                } else {
+                    RouterUtil.clickMenuLink(getActivity(), "hmiou://m.54jietiao.com/iou_create/paper_receive_create_or_modic_receipt");
+                }
             }
         });
     }
